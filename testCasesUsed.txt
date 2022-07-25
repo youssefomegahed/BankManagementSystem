@@ -1,0 +1,68 @@
+Add customers:
+
+I chose "Add customer" option and entered the data that the program asked for (customer's id, name, email, address, etc..). After that, the program asked if I wanted to add another customer or go back, so I chose to add another customer and tried to enter an identical ID. When I did that, the program sent out "ID already exists, try again". 
+I then entered a second customer and went back to the main menu and chose to display all customers. Both customers with their IDs appeared on the screen.
+
+Delete customers:
+
+I went back to the main menu again and chose to delete the first customer. A confirmation message appeared and I confirmed. I then went back to the main menu to display all customers again, and only the second customer appeared, meaning that the deletion worked.
+
+Searching customers
+
+I chose the search option on the main menu to test it. I had the option to search by ID or by name. On the first try, I entered the ID of the customer I had entered (which was 5), and then the program displayed the message "Found!" and the name of the customer I had entered. On the second try, I entered the customer's first name and wrote random letters for the last name, and the customer appeared. I then tried again but by writing random letters in the first name and wrote the actual last name, and the customer appeared.
+Then, I entered random first and last names and the program displayed that customer could not be found.
+
+Creating accounts:
+
+To test creating accounts, I went back to the main menu and searched for the customer I had created. When it appeared, there were the following options:
+For account details, enter 1
+For ATM transaction details, enter 2
+For customer information, enter 3
+To go back to the main menu, enter 4
+
+I chose the first option, then the following options appeared:
+To create an account for this customer, enter 1
+To view this customer's accounts, enter 2
+To go back, enter 3
+
+I chose the first option.
+
+The program then asked: what type of account would you like to create(Current/saving)
+I entered Current.
+
+The program outputed:
+Account created successfully!
+Account number: 10383
+Account balance: 0
+Account type: Current
+I went back and chose the option to view this customer's accounts and this account appeared, meaning that it worked.
+
+Depositing/withdrawing:
+I went back to this page:
+For account details, enter 1
+For ATM transaction details, enter 2
+For customer information, enter 3
+To go back to the main menu, enter 4
+
+and chose the second option. 
+The following list appeared:
+To deposit money into this account, enter 1
+To withdraw money from this account, enter 2
+To go back, enter 
+
+I chose to deposit. I wrote the number of the account which was displayed earlier and the amount that I would like to deposit (500). The program then displayed the message "500 EGP have been deposited successfully" then the account details with the updated balance appeared.
+
+To test withdrawing, I did the same steps and the results appeared as expected.
+
+---
+
+I tested multiple exceptions:
+
+1) When the program asked to enter one of a set of numbers, I tried entering a different number. The result was a message "Invalid input. Try again"
+
+2) I tried to create a customer with an ID that already exists, the program outputed "ID already exists, try again"
+
+3) I tried to enter anything other than "Current, Saving, S, C, current, saving, s, c" in the account type but the program outputed "Not a valid type"
+
+
+
